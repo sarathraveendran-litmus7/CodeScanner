@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'QRCodeScanner'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of QRCodeScanner.'
+  s.version          = '1.0.0'
+  s.summary          = 'A helper framework to read Barcodes and QRCodes'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -18,25 +18,22 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+  This frameworks help to read all kind of Barcodes and QR codes with minimum resource utilization and with minimal time. A focus are which helps you to bounds your scan region.
                        DESC
 
   s.homepage         = 'https://github.com/SR/QRCodeScanner'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'SR' => 'sarath.raveendran@litmus7@.com' }
+  s.author           = { 'SR' => 'Sarath Raveendran' }
   s.source           = { :git => 'https://github.com/SR/QRCodeScanner.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '11.0'
 
   s.source_files = 'QRCodeScanner/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'QRCodeScanner' => ['QRCodeScanner/Assets/*.png']
-  # }
+  s.resource_bundles = {'Asset' => ['QRCodeScanner/Classes/Asset.bundle']}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+   s.frameworks = 'UIKit', 'AVKit', 'Vision'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
