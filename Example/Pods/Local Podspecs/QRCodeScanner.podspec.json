@@ -1,0 +1,22 @@
+{
+  "name": "QRCodeScanner",
+  "version": "0.1.0",
+  "summary": "A short description of QRCodeScanner.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/SR/QRCodeScanner",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "SR": "sarath.raveendran@litmus7@.com"
+  },
+  "source": {
+    "git": "https://github.com/SR/QRCodeScanner.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "QRCodeScanner/Classes/**/*"
+}
