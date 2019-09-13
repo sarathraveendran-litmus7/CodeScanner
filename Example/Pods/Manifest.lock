@@ -1,0 +1,16 @@
+PODS:
+  - CodeScan (0.1.0)
+
+DEPENDENCIES:
+  - CodeScan (from `../`)
+
+EXTERNAL SOURCES:
+  CodeScan:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CodeScan: 0a3282523e42ff85d3f80063034f266b619eeaa3
+
+PODFILE CHECKSUM: a22e1f7c2f74c5e38b0cbb5cbfbdba11c5a19b2d
+
+COCOAPODS: 1.7.5

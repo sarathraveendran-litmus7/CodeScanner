@@ -1,0 +1,6 @@
+framework module CodeScan {
+  umbrella header "CodeScan-umbrella.h"
+
+  export *
+  module * { export * }
+}

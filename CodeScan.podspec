@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'CodeScan'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of CodeScan.'
+s.name             = 'CodeScan'
+s.version          = '1.0.0'
+s.summary          = 'A helper framework to read Barcodes and QRCodes'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,25 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+s.description      = <<-DESC
+This frameworks help to read all kind of Barcodes and QR codes with minimum resource utilization and with minimal time. A focus are which helps you to bounds your scan region.
+DESC
 
-  s.homepage         = 'https://github.com/sarathraveendran-litmus7/CodeScan'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
-  s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'sarathraveendran-litmus7' => 'sarath.raveendran@litmus7@.com' }
-  s.source           = { :git => 'https://github.com/sarathraveendran-litmus7/CodeScan.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+s.homepage         = 'https://github.com/sarathraveendran-litmus7/CodeScanner'
+# s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+s.license          = { :type => 'MIT', :file => 'LICENSE' }
+s.author           = { 'sarathraveendran-litmus7' => 'sarath.raveendran@litmus7@.com' }
+s.source           = { :git => 'https://github.com/sarathraveendran-litmus7/CodeScanner.git', :tag => s.version.to_s }
+# s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+s.ios.deployment_target = '11.0'
+s.swift_version = '5.0'
 
-  s.source_files = 'CodeScan/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'CodeScan' => ['CodeScan/Assets/*.png']
-  # }
+s.source_files = 'QRCodeScanner/Classes/**/*'
+s.resource_bundles = {'Asset' => ['QRCodeScanner/Classes/Asset.bundle']}
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+
+# s.public_header_files = 'Pod/Classes/**/*.h'
+s.frameworks = 'UIKit', 'AVKit', 'Vision'
+# s.dependency 'AFNetworking', '~> 2.3'
 end

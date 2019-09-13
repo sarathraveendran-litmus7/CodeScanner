@@ -1,0 +1,22 @@
+{
+  "name": "CodeScan",
+  "version": "0.1.0",
+  "summary": "A short description of CodeScan.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/sarathraveendran-litmus7/CodeScan",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "sarathraveendran-litmus7": "sarath.raveendran@litmus7@.com"
+  },
+  "source": {
+    "git": "https://github.com/sarathraveendran-litmus7/CodeScan.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CodeScan/Classes/**/*"
+}
