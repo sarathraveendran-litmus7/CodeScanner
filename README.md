@@ -22,7 +22,7 @@ pod 'QRCodeScanner'
 
 ## Author
 
-SR, sarath.raveendran@litmus7@.com
+SR, Sarath Raveendran
 
 ## License
 
