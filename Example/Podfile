@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CodeScan_Example' do
+  pod 'CodeScan', :path => '../'
+
+  target 'CodeScan_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
