@@ -32,7 +32,7 @@ s.ios.deployment_target = '11.0'
 s.swift_version = '5.0'
 
 s.source_files = 'CodeScan/Classes/**/*'
-s.resource_bundles = {'Asset' => ['CodeScan/Classes/Asset.bundle']}
+#s.resource_bundles = {'Asset' => ['CodeScan/Classes/Asset.bundle']}
 
 # s.public_header_files = 'Pod/Classes/**/*.h'
 s.frameworks = 'UIKit', 'AVKit', 'Vision'
