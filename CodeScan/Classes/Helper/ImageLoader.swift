@@ -12,11 +12,7 @@ class Image {
     
     static func getImage(_ named: String) -> UIImage? {
        
-        let podBundle = Bundle(for: Image.self) // for getting pod url
-        if let url = podBundle.url(forResource: "Asset", withExtension: "bundle") {
-            let bundle = Bundle(url: url)
-            return UIImage(named: named, in: bundle, compatibleWith: nil)
-        }
-        return UIImage()
+        let bundle = Bundle(for: Image.self)
+        return UIImage(named: named, in: bundle, compatibleWith: nil)
     }
 }

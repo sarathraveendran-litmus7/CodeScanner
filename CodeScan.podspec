@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'CodeScan'
-s.version          = '1.0.1'
+s.version          = '1.0.2'
 s.summary          = 'A helper framework to read Barcodes and QRCodes'
 
 # This description is used to generate tags and improve search results.
@@ -31,9 +31,8 @@ s.source           = { :git => 'https://github.com/sarathraveendran-litmus7/Code
 s.ios.deployment_target = '11.0'
 s.swift_version = '5.0'
 
-s.source_files = 'QRCodeScanner/Classes/**/*'
-s.resource_bundles = {'Asset' => ['QRCodeScanner/Classes/Asset.bundle']}
-
+s.source_files = 'CodeScan/Classes/**/*'
+s.resource_bundles = {'Asset' => ['CodeScan/Classes/Asset.bundle']}
 
 # s.public_header_files = 'Pod/Classes/**/*.h'
 s.frameworks = 'UIKit', 'AVKit', 'Vision'
