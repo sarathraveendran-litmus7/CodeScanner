@@ -12,9 +12,9 @@
 		1FF685D58ABDF1B86D5D9699AFBF4257 /* Pods-CodeScan_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE742811742416A3E1DD0C2950C8205 /* Pods-CodeScan_Tests-dummy.m */; };
 		2B5605891ED1FD63F8F3CD30C730FD1D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		35525F86CC3FE9E1BD0C059876898B15 /* Pods-CodeScan_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B7D816F3607CA1DDA71C70B1C5292F89 /* Pods-CodeScan_Example-dummy.m */; };
-		4D0008E7232E1BEA004D1490 /* scanner_focus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0008E4232E1BEA004D1490 /* scanner_focus@3x.png */; };
-		4D0008E8232E1BEA004D1490 /* scanner_focus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0008E5232E1BEA004D1490 /* scanner_focus@2x.png */; };
-		4D0008E9232E1BEA004D1490 /* scanner_focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0008E6232E1BEA004D1490 /* scanner_focus.png */; };
+		4D0008EE232E1F0B004D1490 /* scanner_focus@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0008EB232E1F0B004D1490 /* scanner_focus@3x.png */; };
+		4D0008EF232E1F0B004D1490 /* scanner_focus@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0008EC232E1F0B004D1490 /* scanner_focus@2x.png */; };
+		4D0008F0232E1F0B004D1490 /* scanner_focus.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D0008ED232E1F0B004D1490 /* scanner_focus.png */; };
 		4D5DBC12232C0B05008C811C /* ScannerReadingMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBBFD232C0B05008C811C /* ScannerReadingMode.swift */; };
 		4D5DBC13232C0B05008C811C /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBBFE232C0B05008C811C /* ImageLoader.swift */; };
 		4D5DBC14232C0B05008C811C /* ScanningDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBBFF232C0B05008C811C /* ScanningDevice.swift */; };
@@ -64,9 +64,9 @@
 		2A27E45B69C7977A1556E2403F2EB3D9 /* Pods-CodeScan_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CodeScan_Example-umbrella.h"; sourceTree = "<group>"; };
 		2D3C1012F83A9729907BF70F46DBA929 /* CodeScan-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CodeScan-umbrella.h"; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		4D0008E4232E1BEA004D1490 /* scanner_focus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanner_focus@3x.png"; sourceTree = "<group>"; };
-		4D0008E5232E1BEA004D1490 /* scanner_focus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanner_focus@2x.png"; sourceTree = "<group>"; };
-		4D0008E6232E1BEA004D1490 /* scanner_focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanner_focus.png; sourceTree = "<group>"; };
+		4D0008EB232E1F0B004D1490 /* scanner_focus@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanner_focus@3x.png"; sourceTree = "<group>"; };
+		4D0008EC232E1F0B004D1490 /* scanner_focus@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scanner_focus@2x.png"; sourceTree = "<group>"; };
+		4D0008ED232E1F0B004D1490 /* scanner_focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scanner_focus.png; sourceTree = "<group>"; };
 		4D5DBBFD232C0B05008C811C /* ScannerReadingMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerReadingMode.swift; sourceTree = "<group>"; };
 		4D5DBBFE232C0B05008C811C /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
 		4D5DBBFF232C0B05008C811C /* ScanningDevice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScanningDevice.swift; sourceTree = "<group>"; };
@@ -160,15 +160,15 @@
 			path = "Target Support Files/Pods-CodeScan_Tests";
 			sourceTree = "<group>";
 		};
-		4D0008E3232E1BEA004D1490 /* Images */ = {
+		4D0008EA232E1F0B004D1490 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				4D0008E4232E1BEA004D1490 /* scanner_focus@3x.png */,
-				4D0008E5232E1BEA004D1490 /* scanner_focus@2x.png */,
-				4D0008E6232E1BEA004D1490 /* scanner_focus.png */,
+				4D0008EB232E1F0B004D1490 /* scanner_focus@3x.png */,
+				4D0008EC232E1F0B004D1490 /* scanner_focus@2x.png */,
+				4D0008ED232E1F0B004D1490 /* scanner_focus.png */,
 			);
 			name = Images;
-			path = CodeScan/Assets/Images;
+			path = CodeScan/Classes/Images;
 			sourceTree = "<group>";
 		};
 		4D5DBBFC232C0B05008C811C /* Helper */ = {
@@ -289,7 +289,7 @@
 		CA8725586A17EDE1210F880F845FC111 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				4D0008E3232E1BEA004D1490 /* Images */,
+				4D0008EA232E1F0B004D1490 /* Images */,
 				4D5DBC07232C0B05008C811C /* Core */,
 				4D5DBBFC232C0B05008C811C /* Helper */,
 				61832C340E934D67606C7D15A0D1B46D /* CodeScan.podspec */,
@@ -458,9 +458,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0008E9232E1BEA004D1490 /* scanner_focus.png in Resources */,
-				4D0008E8232E1BEA004D1490 /* scanner_focus@2x.png in Resources */,
-				4D0008E7232E1BEA004D1490 /* scanner_focus@3x.png in Resources */,
+				4D0008F0232E1F0B004D1490 /* scanner_focus.png in Resources */,
+				4D0008EF232E1F0B004D1490 /* scanner_focus@2x.png in Resources */,
+				4D0008EE232E1F0B004D1490 /* scanner_focus@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

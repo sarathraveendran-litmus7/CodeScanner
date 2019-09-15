@@ -12,7 +12,7 @@ class Image {
     
     static func getImage(_ named: String) -> UIImage? {
        
-        let bundle = Bundle(for: Image.self)
-        return UIImage(named: named, in: bundle, compatibleWith: nil)
+        let _bundle = Bundle(for: Image.self)
+        return UIImage(named: named, in: _bundle, compatibleWith: nil)
     }
 }
