@@ -98,14 +98,14 @@ class Reader: NSObject {
         self.mode = mode
         super.init()
         
-        startMonitoring()
+        //startMonitoring()
     }
     
     
     
     deinit {
         
-        stopMonitoring()
+        //stopMonitoring()
     }
     
     
