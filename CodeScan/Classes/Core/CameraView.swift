@@ -408,7 +408,7 @@ extension Reader {
             return
         }
         
-        if self.captureSession.isRunning {
+        if self.captureSession.isRunning { 
             
             // Assume first item is user selected
             if let code = scanCodes.first {
@@ -417,7 +417,8 @@ extension Reader {
                 let bounds = getBoundsRespectWithScreen(for: code)
                 if focusLayer.frame.contains(bounds) {
                     
-                    
+                    self.pauseCapturing()
+                    self.parent?.pauseAnimation()
                     let codeType: CodeType = (code.symbology == .QR ? CodeType.QRCode : .BarCode)
                     let data = code.payloadStringValue
                     delegate?.scanningDidSuccess(with: codeType, value: data)

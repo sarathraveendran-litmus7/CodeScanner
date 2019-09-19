@@ -120,10 +120,12 @@ extension SRScanner {
     }
     
     
+    
     public func pauseAnimation() {
         
         focusView.pause()
     }
+    
     
     
     public func resumeAnimation() {
@@ -132,15 +134,19 @@ extension SRScanner {
     }
     
     
+    
     public func startCapturing() {
         
         reader.startCapturing()
+        resumeAnimation()
     }
+    
     
     
     public func pauseCapturing() {
         
         reader.pauseCapturing()
+        pauseAnimation()
     }
     
     
@@ -148,13 +154,16 @@ extension SRScanner {
     public func stopCapturing() {
         
         reader.stopCapturing()
+        pauseAnimation()
     }
+    
     
     
     public func orientionDidChange() {
         
         reader.orientionDidChange()
     }
+    
     
     
     public func updatePreviewFrame() {

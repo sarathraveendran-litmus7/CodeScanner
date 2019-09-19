@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'CodeScan'
-s.version          = '1.0.6'
+s.version          = '1.0.7'
 s.summary          = 'A helper framework to read Barcodes and QRCodes'
 
 # This description is used to generate tags and improve search results.
