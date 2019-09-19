@@ -239,13 +239,20 @@ extension Reader: CaptureSession {
     
     func orientionDidChange() {
         
-        let bounds = cameraLayer.bounds
-        videoPreviewLayer.bounds = bounds
-        videoPreviewLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
+        updatePreviewFrame()
         if let connection = videoPreviewLayer.connection, connection.isVideoOrientationSupported {
             
             connection.videoOrientation = self.videoOrientation
         }
+    }
+    
+    
+    
+    func updatePreviewFrame() {
+        
+        let bounds = cameraLayer.bounds
+        videoPreviewLayer.bounds = bounds
+        videoPreviewLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
     }
     
     

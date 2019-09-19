@@ -155,6 +155,12 @@ extension SRScanner {
         
         reader.orientionDidChange()
     }
+    
+    
+    public func updatePreviewFrame() {
+        
+        reader.updatePreviewFrame()
+    }
 }
 
 
