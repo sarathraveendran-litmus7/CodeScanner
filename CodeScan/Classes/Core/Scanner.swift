@@ -123,38 +123,53 @@ extension SRScanner {
     
     public func pauseAnimation() {
         
-        focusView.pause()
+        DispatchQueue.main.async {
+            
+            self.focusView.pause()
+        }
     }
     
     
     
     public func resumeAnimation() {
         
-        focusView.resume()
+        DispatchQueue.main.async {
+            
+            self.focusView.resume()
+        }
     }
     
     
     
     public func startCapturing() {
         
-        reader.startCapturing()
-        resumeAnimation()
+        DispatchQueue.main.async {
+            
+            self.reader.startCapturing()
+            self.resumeAnimation()
+        }
     }
     
     
     
     public func pauseCapturing() {
         
-        reader.pauseCapturing()
-        pauseAnimation()
+        DispatchQueue.main.async {
+            
+            self.reader.pauseCapturing()
+            self.pauseAnimation()
+        }
     }
     
     
     
     public func stopCapturing() {
         
-        reader.stopCapturing()
-        pauseAnimation()
+        DispatchQueue.main.async {
+            
+            self.reader.stopCapturing()
+            self.pauseAnimation()
+        }
     }
     
     
