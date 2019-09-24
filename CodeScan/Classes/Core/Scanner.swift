@@ -22,7 +22,7 @@ public class SRScanner: NSObject {
         return view
     }()
     private lazy var overlayView: OverlayView = {
-        let view = OverlayView(self.scannerPosition, scannerView: self.scannerView)
+        let view = OverlayView(self.scannerPosition, focusView: self.focusView)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -48,6 +48,7 @@ public class SRScanner: NSObject {
         self.styleScanner()
         self.reader = Reader(cameraLayer: scannerView.layer, focusLayer: self.focusView.layer, mode: mode)
         self.reader.parent = self
+        addOverlay()
     }
 }
 
@@ -165,14 +166,20 @@ extension SRScanner {
     public func updatePreviewFrame() {
         
         reader.updatePreviewFrame()
+        updateOverlayFrame()
     }
     
     
-    public func addOverlay() {
-    
+    func addOverlay() {
+        
         self.scannerView.addSubview(overlayView)
         overlayView.setConstraint(leftAnchor: self.scannerView.leftAnchor, rightAnchor: self.scannerView.rightAnchor, topAnchor: self.scannerView.topAnchor, bottomAnchor: self.scannerView.bottomAnchor)
-        overlayView.arrangeSubViews()
+    }
+    
+    
+    func updateOverlayFrame() {
+        
+        overlayView.addMask()
     }
 }
 

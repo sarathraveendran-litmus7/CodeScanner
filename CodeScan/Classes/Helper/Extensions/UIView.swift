@@ -67,3 +67,25 @@ extension UIView {
         addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: viewsDictionary))
     }
 }
+
+
+
+
+
+
+extension UIView {
+    
+    func mask(withRect rect: CGRect, inverse: Bool = false) {
+        
+        let path = UIBezierPath(rect: rect)
+        let maskLayer = CAShapeLayer()
+        if inverse {
+        
+            path.append(UIBezierPath(rect: self.bounds))
+            maskLayer.fillRule = .evenOdd
+        }
+        
+        maskLayer.path = path.cgPath
+        self.layer.mask = maskLayer
+    }
+}
