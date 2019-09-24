@@ -48,7 +48,6 @@ public class SRScanner: NSObject {
         self.styleScanner()
         self.reader = Reader(cameraLayer: scannerView.layer, focusLayer: self.focusView.layer, mode: mode)
         self.reader.parent = self
-        addOverlay()
     }
 }
 
@@ -170,7 +169,7 @@ extension SRScanner {
     }
     
     
-    func addOverlay() {
+    public func addOverlay() {
         
         self.scannerView.addSubview(overlayView)
         overlayView.setConstraint(leftAnchor: self.scannerView.leftAnchor, rightAnchor: self.scannerView.rightAnchor, topAnchor: self.scannerView.topAnchor, bottomAnchor: self.scannerView.bottomAnchor)

@@ -23,6 +23,7 @@ class ViewController: UIViewController {
         scanner = SRScanner(self.view, position: ScannerPosition.middle, mode: [ScannerReadingMode.barCode, ScannerReadingMode.qrCode])
         scanner.delegate = self
         scanner.initializeScanning()
+        scanner.addOverlay()
     }
     
     override func viewDidLayoutSubviews() {
