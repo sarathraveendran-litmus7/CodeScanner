@@ -39,4 +39,31 @@ extension UIView {
             self.topAnchor.constraint(equalTo: superView.topAnchor, constant: _top).isActive = true
         }
     }
+    
+    
+    func setConstraint(leftAnchor: NSLayoutXAxisAnchor, rightAnchor: NSLayoutXAxisAnchor, topAnchor: NSLayoutYAxisAnchor, bottomAnchor: NSLayoutYAxisAnchor) {
+        
+        self.leftAnchor.constraint(equalTo: leftAnchor).isActive = true
+        self.rightAnchor.constraint(equalTo: rightAnchor).isActive = true
+        self.topAnchor.constraint(equalTo: topAnchor).isActive = true
+        self.bottomAnchor.constraint(equalTo: bottomAnchor).isActive = true
+    }
+}
+
+
+
+extension UIView {
+    
+    // Set Constraints
+    func addConstraintsWithFormat(_ format: String, views: UIView...) {
+        
+        var viewsDictionary = [String: UIView]()
+        for (index, view) in views.enumerated() {
+            
+            let key = "v\(index)"
+            view.translatesAutoresizingMaskIntoConstraints = false
+            viewsDictionary[key] = view
+        }
+        addConstraints(NSLayoutConstraint.constraints(withVisualFormat: format, options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: viewsDictionary))
+    }
 }

@@ -21,6 +21,12 @@ public class SRScanner: NSObject {
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
+    private lazy var overlayView: OverlayView = {
+        let view = OverlayView(self.scannerPosition, scannerView: self.scannerView)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
     
     // Set from parent
     public weak var delegate: ScannerResultDelegate? {
@@ -54,7 +60,7 @@ extension SRScanner {
     
     private func styleScanner() {
         
-        let size = getScanningAreaSize()
+        let size = getScanningAreaSize(self.scannerView)
         scannerView.addSubview(focusView)
         
         switch scannerPosition {
@@ -65,31 +71,6 @@ extension SRScanner {
         case .middle:
             arrangeScannerAtMiddle(width: size.width, height: size.height)
         }
-    }
-    
-    
-    
-    private func getScanningAreaSize() -> CGSize {
-        
-        let device = UIDevice.current.userInterfaceIdiom
-        let size: CGSize
-        
-        switch device {
-            
-        case .pad:
-            let width = round(self.scannerView.bounds.width * 0.6)
-            let height = round((width * 3)/4) + 120
-            size = CGSize(width: width, height: height)
-            
-        case .phone:
-            let width = round(self.scannerView.bounds.width * 0.8)
-            let height = round((width * 3)/4) + 80
-            size = CGSize(width: width, height: height)
-            
-        default:
-            size = CGSize(width: 0, height: 0)
-        }
-        return size
     }
     
     
@@ -184,6 +165,14 @@ extension SRScanner {
     public func updatePreviewFrame() {
         
         reader.updatePreviewFrame()
+    }
+    
+    
+    public func addOverlay() {
+    
+        self.scannerView.addSubview(overlayView)
+        overlayView.setConstraint(leftAnchor: self.scannerView.leftAnchor, rightAnchor: self.scannerView.rightAnchor, topAnchor: self.scannerView.topAnchor, bottomAnchor: self.scannerView.bottomAnchor)
+        overlayView.arrangeSubViews()
     }
 }
 

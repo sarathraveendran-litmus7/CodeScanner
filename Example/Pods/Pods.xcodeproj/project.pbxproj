@@ -21,7 +21,7 @@
 		4D5DBC15232C0B05008C811C /* ScannerPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC00232C0B05008C811C /* ScannerPosition.swift */; };
 		4D5DBC16232C0B05008C811C /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC02232C0B05008C811C /* CALayer.swift */; };
 		4D5DBC17232C0B05008C811C /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC03232C0B05008C811C /* Notification.swift */; };
-		4D5DBC18232C0B05008C811C /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC04232C0B05008C811C /* UIViewController.swift */; };
+		4D5DBC18232C0B05008C811C /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC04232C0B05008C811C /* UIView.swift */; };
 		4D5DBC19232C0B05008C811C /* ScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC05232C0B05008C811C /* ScannerError.swift */; };
 		4D5DBC1A232C0B05008C811C /* ScannerResultDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC06232C0B05008C811C /* ScannerResultDelegate.swift */; };
 		4D5DBC1B232C0B05008C811C /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC08232C0B05008C811C /* FocusView.swift */; };
@@ -31,6 +31,8 @@
 		4D5DBC1F232C0B05008C811C /* CameraPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC0D232C0B05008C811C /* CameraPermission.swift */; };
 		4D5DBC20232C0B05008C811C /* SessionConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC0F232C0B05008C811C /* SessionConfiguration.swift */; };
 		4D5DBC21232C0B05008C811C /* SessionDefaultConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5DBC10232C0B05008C811C /* SessionDefaultConfiguration.swift */; };
+		4DD192C92333EC5500C9B6F0 /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD192C82333EC5500C9B6F0 /* OverlayView.swift */; };
+		4DD192CB2333EE2900C9B6F0 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD192CA2333EE2900C9B6F0 /* Utils.swift */; };
 		61FA74D9C5505F1BE1E112BDA158FD06 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		72FB9C33978859905AD3DF2B511CF934 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		901F10E4DFA4BD0FAFB5C84C4F9A797D /* CodeScan-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D3C1012F83A9729907BF70F46DBA929 /* CodeScan-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -73,7 +75,7 @@
 		4D5DBC00232C0B05008C811C /* ScannerPosition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerPosition.swift; sourceTree = "<group>"; };
 		4D5DBC02232C0B05008C811C /* CALayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayer.swift; sourceTree = "<group>"; };
 		4D5DBC03232C0B05008C811C /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
-		4D5DBC04232C0B05008C811C /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		4D5DBC04232C0B05008C811C /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		4D5DBC05232C0B05008C811C /* ScannerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerError.swift; sourceTree = "<group>"; };
 		4D5DBC06232C0B05008C811C /* ScannerResultDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScannerResultDelegate.swift; sourceTree = "<group>"; };
 		4D5DBC08232C0B05008C811C /* FocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FocusView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,8 @@
 		4D5DBC0D232C0B05008C811C /* CameraPermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraPermission.swift; sourceTree = "<group>"; };
 		4D5DBC0F232C0B05008C811C /* SessionConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionConfiguration.swift; sourceTree = "<group>"; };
 		4D5DBC10232C0B05008C811C /* SessionDefaultConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SessionDefaultConfiguration.swift; sourceTree = "<group>"; };
+		4DD192C82333EC5500C9B6F0 /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
+		4DD192CA2333EE2900C9B6F0 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4DE742811742416A3E1DD0C2950C8205 /* Pods-CodeScan_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CodeScan_Tests-dummy.m"; sourceTree = "<group>"; };
 		4FA1D1C3A900791A6C4A446846184DC7 /* Pods-CodeScan_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CodeScan_Example-frameworks.sh"; sourceTree = "<group>"; };
 		61832C340E934D67606C7D15A0D1B46D /* CodeScan.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CodeScan.podspec; sourceTree = "<group>"; tabWidth = 2; };
@@ -181,6 +185,7 @@
 				4D5DBC00232C0B05008C811C /* ScannerPosition.swift */,
 				4D5DBC05232C0B05008C811C /* ScannerError.swift */,
 				4D5DBC06232C0B05008C811C /* ScannerResultDelegate.swift */,
+				4DD192CA2333EE2900C9B6F0 /* Utils.swift */,
 			);
 			name = Helper;
 			path = CodeScan/Classes/Helper;
@@ -191,7 +196,7 @@
 			children = (
 				4D5DBC02232C0B05008C811C /* CALayer.swift */,
 				4D5DBC03232C0B05008C811C /* Notification.swift */,
-				4D5DBC04232C0B05008C811C /* UIViewController.swift */,
+				4D5DBC04232C0B05008C811C /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,6 +204,7 @@
 		4D5DBC07232C0B05008C811C /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				4DD192C82333EC5500C9B6F0 /* OverlayView.swift */,
 				4D5DBC08232C0B05008C811C /* FocusView.swift */,
 				4D5DBC09232C0B05008C811C /* CameraView.swift */,
 				4D5DBC0A232C0B05008C811C /* Scanner.swift */,
@@ -503,13 +509,15 @@
 				163B132737680281602E0585DC647209 /* CodeScan-dummy.m in Sources */,
 				4D5DBC17232C0B05008C811C /* Notification.swift in Sources */,
 				4D5DBC1F232C0B05008C811C /* CameraPermission.swift in Sources */,
+				4DD192C92333EC5500C9B6F0 /* OverlayView.swift in Sources */,
 				4D5DBC1D232C0B05008C811C /* Scanner.swift in Sources */,
 				4D5DBC16232C0B05008C811C /* CALayer.swift in Sources */,
 				4D5DBC1A232C0B05008C811C /* ScannerResultDelegate.swift in Sources */,
 				4D5DBC13232C0B05008C811C /* ImageLoader.swift in Sources */,
-				4D5DBC18232C0B05008C811C /* UIViewController.swift in Sources */,
+				4D5DBC18232C0B05008C811C /* UIView.swift in Sources */,
 				4D5DBC1B232C0B05008C811C /* FocusView.swift in Sources */,
 				4D5DBC21232C0B05008C811C /* SessionDefaultConfiguration.swift in Sources */,
+				4DD192CB2333EE2900C9B6F0 /* Utils.swift in Sources */,
 				4D5DBC15232C0B05008C811C /* ScannerPosition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
