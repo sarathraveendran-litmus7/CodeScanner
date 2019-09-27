@@ -60,9 +60,16 @@ extension SRScanner {
     
     private func styleScanner() {
         
-        let size = getScanningAreaSize(self.scannerView)
         scannerView.addSubview(focusView)
+        updateOrAddFocusViewConstrains()
+    }
+    
+    
+    
+    func updateOrAddFocusViewConstrains() {
         
+        focusView.removeConstraints(focusView.constraints)
+        let size = getScanningAreaSize(self.scannerView)
         switch scannerPosition {
             
         case .top:
@@ -166,6 +173,7 @@ extension SRScanner {
         
         reader.updatePreviewFrame()
         updateOverlayFrame()
+        updateOrAddFocusViewConstrains()
     }
     
     
