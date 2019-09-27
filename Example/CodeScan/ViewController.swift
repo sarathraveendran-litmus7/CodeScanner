@@ -13,14 +13,14 @@ import CodeScan
 class ViewController: UIViewController {
     
     var scanner: SRScanner!
-    
+    @IBOutlet weak var mview: UIView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        scanner = SRScanner(self.view, position: ScannerPosition.middle, mode: [ScannerReadingMode.barCode, ScannerReadingMode.qrCode])
+        scanner = SRScanner(mview, position: ScannerPosition.middle, mode: [ScannerReadingMode.barCode, ScannerReadingMode.qrCode])
         scanner.delegate = self
         scanner.initializeScanning()
         scanner.addOverlay()
