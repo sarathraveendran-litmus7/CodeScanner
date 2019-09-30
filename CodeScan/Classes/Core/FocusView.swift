@@ -61,7 +61,7 @@ class FocusView: UIView {
     private func addSubViews() {
         
         addSubview(focusImageView)
-        // addSubview(scannerListenerView)
+        addSubview(scannerListenerView)
     }
     
     
@@ -71,13 +71,12 @@ class FocusView: UIView {
         // Focus Image View
         focusImageView.setConstraint(width: self.bounds.width, height: self.bounds.height, centerX: 0, centerY: 0, top: nil)
         
-        /*
+    
         // Green Indicator
         scannerListenerView.widthAnchor.constraint(equalTo: widthAnchor, constant: -24.0).isActive = true
-        scannerListenerView.heightAnchor.constraint(equalToConstant: 2).isActive = true
+        scannerListenerView.heightAnchor.constraint(equalToConstant: 0).isActive = true
         scannerListenerView.topAnchor.constraint(equalTo: topAnchor, constant: 0).isActive = true
         scannerListenerView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
-         */
     }
     
     
