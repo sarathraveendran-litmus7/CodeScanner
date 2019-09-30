@@ -53,7 +53,7 @@ class FocusView: UIView {
         super.layoutSubviews()
         
         arrangeSubviews()
-        startAnimation()
+        //startAnimation()
     }
     
     
@@ -61,7 +61,7 @@ class FocusView: UIView {
     private func addSubViews() {
         
         addSubview(focusImageView)
-        addSubview(scannerListenerView)
+        // addSubview(scannerListenerView)
     }
     
     
@@ -71,40 +71,42 @@ class FocusView: UIView {
         // Focus Image View
         focusImageView.setConstraint(width: self.bounds.width, height: self.bounds.height, centerX: 0, centerY: 0, top: nil)
         
+        /*
         // Green Indicator
         scannerListenerView.widthAnchor.constraint(equalTo: widthAnchor, constant: -24.0).isActive = true
         scannerListenerView.heightAnchor.constraint(equalToConstant: 2).isActive = true
         scannerListenerView.topAnchor.constraint(equalTo: topAnchor, constant: 0).isActive = true
         scannerListenerView.centerXAnchor.constraint(equalTo: centerXAnchor).isActive = true
+         */
     }
     
     
     
     private func startAnimation() {
         
-        let bottomPosition = frame.height - 12
-        self.scannerListenerView.layer.animate(from: self.scannerListenerView.frame.origin.x, endPoint: bottomPosition)
+        /*let bottomPosition = frame.height - 12
+        self.scannerListenerView.layer.animate(from: self.scannerListenerView.frame.origin.x, endPoint: bottomPosition)*/
     }
     
     
     
     private func pauseLayer(layer: CALayer) {
         
-        let pausedTime: CFTimeInterval = layer.convertTime(CACurrentMediaTime(), from: nil)
+        /*let pausedTime: CFTimeInterval = layer.convertTime(CACurrentMediaTime(), from: nil)
         layer.speed = 0.0
-        layer.timeOffset = pausedTime
+        layer.timeOffset = pausedTime*/
     }
     
     
     
     private func resumeLayer(layer: CALayer) {
         
-        let pausedTime: CFTimeInterval = layer.timeOffset
+        /*let pausedTime: CFTimeInterval = layer.timeOffset
         layer.speed = 1.0
         layer.timeOffset = 0.0
         layer.beginTime = 0.0
         let timeSincePause: CFTimeInterval = layer.convertTime(CACurrentMediaTime(), from: nil) - pausedTime
-        layer.beginTime = timeSincePause
+        layer.beginTime = timeSincePause*/
     }
 }
 
