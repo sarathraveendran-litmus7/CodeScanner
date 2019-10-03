@@ -22,7 +22,13 @@ public enum ScannerError: Error {
 }
 
 
-public enum CameraAccessPermmisionStatus {
+
+public enum CameraAccessPermmisionStatus: String {
     
     case Granted, Denied
+    
+    var value: String {
+       
+        return self.rawValue
+    }
 }
