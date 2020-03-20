@@ -74,11 +74,6 @@ class Reader: NSObject {
         let queue = DispatchQueue(label: "ScannerDispatch", qos: .userInteractive, attributes: .concurrent, autoreleaseFrequency: .inherit, target: .global())
         return queue
     }()
-    private lazy var notificaitonQueue: OperationQueue = {
-        let queue = OperationQueue()
-        queue.qualityOfService = QualityOfService.userInteractive
-        return queue
-    }()
     
     
     
@@ -113,7 +108,6 @@ class Reader: NSObject {
     
     func startMonitoring() {
         
-        //NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: self, queue: notificaitonQueue, using: orientationDidChang)
         NotificationCenter.default.addObserver(self, selector: #selector(orientationDidChange(_:)), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
     
@@ -126,7 +120,7 @@ class Reader: NSObject {
     
     
     
-    @objc func orientationDidChange(_ notification: Notification) {
+    @objc func orientationDidChange(_ notification: NSNotification) {
         
         orientionDidChange()
     }
