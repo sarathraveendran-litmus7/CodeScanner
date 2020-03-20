@@ -77,8 +77,13 @@ extension UIView {
     
     func mask(withRect rect: CGRect, inverse: Bool = false) {
         
+        // Remove pervious
+        self.layer.sublayers?.forEach({ if $0.name == "mask" { $0.removeFromSuperlayer() } })
+        
+        // Add
         let path = UIBezierPath(rect: rect)
         let maskLayer = CAShapeLayer()
+        maskLayer.name = "mask"
         if inverse {
         
             path.append(UIBezierPath(rect: self.bounds))

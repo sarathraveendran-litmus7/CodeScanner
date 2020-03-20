@@ -345,19 +345,6 @@ extension Reader: CaptureSession {
     
     func getBoundsRespectWithScreen(for barcode: VNBarcodeObservation) -> CGRect {
         
-        /*
-        // Current origin is on the bottom-left corner
-        let xCord = barcode.boundingBox.origin.x * self.cameraLayer.frame.size.width
-        var yCord = (1 - barcode.boundingBox.origin.y) * self.cameraLayer.frame.size.height
-        let width = barcode.boundingBox.size.width * self.cameraLayer.frame.size.width
-        var height = -1 * barcode.boundingBox.size.height * self.cameraLayer.frame.size.height
-        
-        // Re-adjust origin to be on the top-left corner, so that calculations can be standardized
-        yCord += height
-        height *= -1
-        return CGRect(x: xCord, y: yCord, width: width, height: height)
-        */
-        
         let transformedRect = barcode.boundingBox
         let convertedRect = self.videoPreviewLayer.layerRectConverted(fromMetadataOutputRect: transformedRect)
         return CGRect(x: convertedRect.origin.x, y:  convertedRect.origin.y, width:  convertedRect.size.width, height:  convertedRect.size.height)

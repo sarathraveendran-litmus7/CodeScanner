@@ -33,11 +33,18 @@ class OverlayView: UIView {
     }
     
     
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        
+        mask(withRect: focusView.frame, inverse: true)
+    }
+    
+    
     func addMask() {
         
         // Style
         backgroundColor = UIColor.black.withAlphaComponent(0.4)
-        mask(withRect: focusView.frame, inverse: true)
     }
 }
 
