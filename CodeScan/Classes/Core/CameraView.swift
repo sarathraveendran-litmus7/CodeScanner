@@ -98,14 +98,14 @@ class Reader: NSObject {
         self.mode = mode
         super.init()
         
-        //startMonitoring()
+        startMonitoring()
     }
     
     
     
     deinit {
         
-        //stopMonitoring()
+        stopMonitoring()
     }
     
     
@@ -243,6 +243,7 @@ extension Reader: CaptureSession {
         if let connection = videoPreviewLayer.connection, connection.isVideoOrientationSupported {
             
             connection.videoOrientation = self.videoOrientation
+            videoPreviewLayer.connection?.videoOrientation = self.videoOrientation
         }
     }
     
@@ -251,7 +252,7 @@ extension Reader: CaptureSession {
     func updatePreviewFrame() {
         
         let bounds = cameraLayer.bounds
-        videoPreviewLayer.bounds = bounds
+        videoPreviewLayer.frame = bounds
         videoPreviewLayer.position = CGPoint(x: bounds.midX, y: bounds.midY)
     }
     

@@ -25,13 +25,12 @@ extension CaptureSessionOutput {
     
     var videoOrientation: AVCaptureVideoOrientation {
         
-        let orientation = UIApplication.shared.statusBarOrientation
-        print(orientation.rawValue)
+        let orientation = UIDevice.current.orientation
         switch orientation {
         case .portrait              : return .portrait
         case .portraitUpsideDown    : return .portraitUpsideDown
-        case .landscapeLeft         : return .landscapeLeft
-        case .landscapeRight        : return .landscapeRight
+        case .landscapeLeft         : return .landscapeRight
+        case .landscapeRight        : return .landscapeLeft
         default                     : return .portrait
         }
     }
