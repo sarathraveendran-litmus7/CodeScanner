@@ -113,7 +113,8 @@ class Reader: NSObject {
     
     func startMonitoring() {
         
-        NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: self, queue: notificaitonQueue, using: orientationDidChang)
+        //NotificationCenter.default.addObserver(forName: UIDevice.orientationDidChangeNotification, object: self, queue: notificaitonQueue, using: orientationDidChang)
+        NotificationCenter.default.addObserver(self, selector: #selector(orientationDidChange(_:)), name: UIDevice.orientationDidChangeNotification, object: nil)
     }
     
     
@@ -125,7 +126,7 @@ class Reader: NSObject {
     
     
     
-    func orientationDidChang(_ notification: Notification) {
+    @objc func orientationDidChange(_ notification: Notification) {
         
         orientionDidChange()
     }

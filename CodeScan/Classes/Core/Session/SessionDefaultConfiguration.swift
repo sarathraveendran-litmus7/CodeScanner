@@ -29,8 +29,8 @@ extension CaptureSessionOutput {
         switch orientation {
         case .portrait              : return .portrait
         case .portraitUpsideDown    : return .portraitUpsideDown
-        case .landscapeLeft         : return .landscapeRight
-        case .landscapeRight        : return .landscapeLeft
+        case .landscapeLeft         : return .landscapeLeft
+        case .landscapeRight        : return .landscapeRight
         default                     : return .portrait
         }
     }
