@@ -157,6 +157,7 @@ extension SRScanner {
             
             self.reader.stopCapturing()
             self.pauseAnimation()
+            self.scannerView.subviews.forEach({ $0.removeFromSuperview() })
         }
     }
     

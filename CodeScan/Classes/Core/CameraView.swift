@@ -337,6 +337,9 @@ extension Reader: CaptureSession {
     
     public func stopCapturing() {
         
+        if let input = self.cameraInput {
+            captureSession.removeInput(input)
+        }
         captureSession.removeOutput(self.videoOutput)
         captureSession.stopRunning()
     }
