@@ -27,7 +27,7 @@ public enum CameraAccessPermmisionStatus: String {
     
     case Granted, Denied
     
-    var value: String {
+    public var value: String {
        
         return self.rawValue
     }
